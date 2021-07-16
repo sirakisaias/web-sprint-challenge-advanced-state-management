@@ -5,7 +5,7 @@ export const FAILED_FETCH = 'FAILED_FETCH';
 export const ADD_FETCH = 'ADD_FETCH';
 export const ADD_ERROR_SMURF = 'ADD_ERROR_SMURF';
 
-export const fetchSmurfs = (dispatch) => {
+export const fetchSmurfs =()=> (dispatch) => {
     dispatch({type:START_FETCH});
     axios
     .get('http://localhost:3333/smurfs')
